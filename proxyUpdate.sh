@@ -9,7 +9,7 @@ echo "Parando serviço do Zabbix Proxy..."
 systemctl stop zabbix-proxy
 
 echo "Instalando repositório Zabbix 7.4..."
-rpm -Uvh https://repo.zabbix.com/zabbix/7.4/rhel/9/noarch/zabbix-release-latest-7.4.el9.noarch.rpm
+rpm -Uvh https://repo.zabbix.com/zabbix/7.4/release/rhel/9/noarch/zabbix-release-7.4-2.el9.noarch.rpm
 
 echo "Limpando cache do DNF..."
 dnf clean all
@@ -27,5 +27,6 @@ zabbix_proxy -V
 echo "========================================="
 
 echo "Atualização concluída!"
+
 
 
