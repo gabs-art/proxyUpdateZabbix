@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sed -i 's/\r$//' proxyUpdate.sh
+
 echo "========================================="
 echo " Atualizando Zabbix Proxy para 7.4"
 echo " Rocky Linux 9"
@@ -27,6 +29,7 @@ zabbix_proxy -V
 echo "========================================="
 
 echo "Atualização concluída!"
+
 
 
 
